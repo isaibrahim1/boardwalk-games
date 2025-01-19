@@ -50,7 +50,7 @@
                 <a class="nav-link" href="#contact" >Contact</a>
               </li>
               <li class="nav-item">
-                <a href="booking.html" class="btn btn-primary ms-lg-3">Book now</a>
+                <a href="booking.html" class="btn custom-button-filled ms-lg-3">Book now</a>
               </li>
             </ul>
           </div>
@@ -194,6 +194,7 @@
         </div>
     </section>
 
+    
     <!-- Section 2-->
     <!--  main element to hold all key sections of the home page. it is not part of the grid structure -->
     
@@ -274,6 +275,58 @@
 
             </div>
         </section>
+
+        <!-- Reservation  Form -->
+     <div class="container mt-5">
+        <h2 class="md-4 text-center">Booking form</h2>
+
+        <form action="success.html" method="GET">
+            <div class="row"> 
+         <div class="col-12 col-lg-4 mb-3">
+            <label for="full-name" class="form-label">Full name</label>
+            <input type="text" class="form-control" placeholder="Enter your full name" required>
+            </div>
+            <div class="col-12 col-lg-4 mb-3">
+                <label for="phone-number" class="form-label">Phone number</label>
+                <input id="phone-number" type="number" class="form-control" placeholder="Enter your phone-number" required>
+                </div>
+                <div class="col-12 col-lg-4 mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" id="email" class="form-control" name="email" required>
+                </div>
+                <div class="col-12 col-lg-8 mb-3">
+                    <label for="game-selection" class="form-label">Select game</label>
+                    <select id="game-selection" class="form-select" name="game-selection" required>
+                        <!-- value="" makes this option a placeholder and won't be accepted as a valid selection, 
+                                    ensuring the required attribute on the <select> element works -->
+                        <option value="" selected>Select game</option>
+                        <option value="galaxy-pioneers">Galaxy Pioneers</option>
+                        <option value="mystic-woods">Mystic Woods</option>
+                        <option value="captains-gambit">Captain's Gambit</option>
+                        <option value="critter-quest">Critter Quest</option>
+                        <option value="setters-of-catan">Settlers of Catan</option>
+                        <option value="monopoly">Monopoly</option>
+                        <option value="exploding-kittens">Exploding Kittens</option>
+                        <option value="cluedo">Cluedo</option>
+                    </select>
+                </div>
+                <div class="col-12 col-lg-4 mb-3">
+                    <label for="date" class="form-label">Requested date</label>
+                    <input id="date" type="date" class="form-control" name="date" required>
+                </div>
+
+            </div>
+            
+
+            
+         
+          <div class="col-12 text-center mb-3">
+            <button type="submit" class="btn btn-outline-primary">Submit</button>
+          </div>
+        </div>
+        </form>
+  
+</div>
      </main>
        
             <!-- New Games section -->
@@ -351,6 +404,8 @@
          </div>
         </div>
      </footer>
+
+     <script src="https://kit.fontawesome.com/6b22a160e8.js" crossorigin="anonymous"></script>
 
      <!--- Bootstrap js script-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
