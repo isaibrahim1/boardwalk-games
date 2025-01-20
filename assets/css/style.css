@@ -91,6 +91,11 @@ h2 {
     color: var(--highlight-color);
     background-color: transparent;
   }
+  .card-footer {
+    color: var(--highlight-color);
+    background-color: transparent;
+    font-weight: bold;
+  }
   #services .card {
     margin-bottom: 1.5rem;
   }

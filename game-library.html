@@ -199,8 +199,8 @@
     <!--  main element to hold all key sections of the home page. it is not part of the grid structure -->
     
         <!-- Services section-->
-        <section id="services" class="container section">
-            <div  class="row" id="services2">
+        <section id="fav-games" class="container section">
+            <div  class="row">
                 <div class="col-12 text-center">
                     <h2 class="display-6">Favourites</h2>
                 </div>
@@ -277,63 +277,65 @@
         </section>
 
         <!-- Reservation  Form -->
-     <div class="container mt-5">
-        <h2 class="md-4 text-center">Booking form</h2>
+        <section id="reserve-game-form" class="section container mb-5">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8">
+                    <h2 class="display-6 text-center">Reserve a game</h2>
+                    <p>
+                        Reserve a board game for your next visit to Boardwalk Games. Pick
+                        your challenge, and let the adventure begin! Fill out your details
+                        and preferred game below, and we'll have it set aside for you when
+                        you arrive.
+                    </p>
 
-        <form action="success.html" method="GET">
-            <div class="row"> 
-         <div class="col-12 col-lg-4 mb-3">
-            <label for="full-name" class="form-label">Full name</label>
-            <input type="text" class="form-control" placeholder="Enter your full name" required>
+                    <!-- reserve game form -->
+                    <!-- action set on the form to provide users with feedback when the form has been submitted.
+                            We have not learned how to handle form data yet, so the form data is not actually sent anywhere for this project -->
+                    <form action="success.html" method="GET">
+                        <div class="row">
+                            <div class="col-12 col-lg-4 mb-3">
+                                <label for="full-name" class="form-label">Full name</label>
+                                <input id="full-name" type="text" class="form-control" name="full-name" required>
+                            </div>
+                            <div class="col-12 col-lg-4 mb-3">
+                                <label for="phone-number" class="form-label">Phone number</label>
+                                <input id="phone-number" type="number" class="form-control" name="phone-number"
+                                    required>
+                            </div>
+                            <div class="col-12 col-lg-4 mb-3">
+                                <label for="email" class="form-label">Email address</label>
+                                <input id="email" type="email" class="form-control" name="email" required>
+                            </div>
+                            <div class="col-12 col-lg-8 mb-3">
+                                <label for="game-selection" class="form-label">Select game</label>
+                                <select id="game-selection" class="form-select" name="game-selection" required>
+                                    <!-- value="" makes this option a placeholder and won't be accepted as a valid selection, 
+                                                ensuring the required attribute on the <select> element works -->
+                                    <option value="" selected>Select game</option>
+                                    <option value="galaxy-pioneers">Galaxy Pioneers</option>
+                                    <option value="mystic-woods">Mystic Woods</option>
+                                    <option value="captains-gambit">Captain's Gambit</option>
+                                    <option value="critter-quest">Critter Quest</option>
+                                    <option value="setters-of-catan">Settlers of Catan</option>
+                                    <option value="monopoly">Monopoly</option>
+                                    <option value="exploding-kittens">Exploding Kittens</option>
+                                    <option value="cluedo">Cluedo</option>
+                                </select>
+                            </div>
+                            <div class="col-12 col-lg-4 mb-3">
+                                <label for="date" class="form-label">Requested date</label>
+                                <input id="date" type="date" class="form-control" name="date" required>
+                            </div>
+                            <div class="col-12 text-end">
+                                <button type="submit" class="btn custom-button-outline mt-3">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div class="col-12 col-lg-4 mb-3">
-                <label for="phone-number" class="form-label">Phone number</label>
-                <input id="phone-number" type="number" class="form-control" placeholder="Enter your phone-number" required>
-                </div>
-                <div class="col-12 col-lg-4 mb-3">
-                    <label for="email" class="form-label">Email address</label>
-                    <input type="email" id="email" class="form-control" name="email" required>
-                </div>
-                <div class="col-12 col-lg-8 mb-3">
-                    <label for="game-selection" class="form-label">Select game</label>
-                    <select id="game-selection" class="form-select" name="game-selection" required>
-                        <!-- value="" makes this option a placeholder and won't be accepted as a valid selection, 
-                                    ensuring the required attribute on the <select> element works -->
-                        <option value="" selected>Select game</option>
-                        <option value="galaxy-pioneers">Galaxy Pioneers</option>
-                        <option value="mystic-woods">Mystic Woods</option>
-                        <option value="captains-gambit">Captain's Gambit</option>
-                        <option value="critter-quest">Critter Quest</option>
-                        <option value="setters-of-catan">Settlers of Catan</option>
-                        <option value="monopoly">Monopoly</option>
-                        <option value="exploding-kittens">Exploding Kittens</option>
-                        <option value="cluedo">Cluedo</option>
-                    </select>
-                </div>
-                <div class="col-12 col-lg-4 mb-3">
-                    <label for="date" class="form-label">Requested date</label>
-                    <input id="date" type="date" class="form-control" name="date" required>
-                </div>
-
-            </div>
-            
-
-            
-         
-          <div class="col-12 text-center mb-3">
-            <button type="submit" class="btn btn-outline-primary">Submit</button>
-          </div>
-        </div>
-        </form>
-  
-</div>
+        </section>
+     
      </main>
-       
-            <!-- New Games section -->
-             
-        
-
-            
       
         
         <!-- footer / contact section -->
