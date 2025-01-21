@@ -134,18 +134,6 @@ h2 {
   }
 
   
- /* grid visualisation css for testing*/
- /*.container,
- .row {
-     border: 2px solid black;
- }
-
-.col-12 {
-    border: 2px solid white;
-    background-color: lightgray;
-     
-}
-*/
 
 /* Medium devices (tablet laptops, 768px and up )*/
 @media screen and (min-width: 768px) {
